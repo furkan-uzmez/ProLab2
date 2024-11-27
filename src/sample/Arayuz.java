@@ -46,8 +46,6 @@ public class Arayuz extends Application {
         Controller controller = loader.getController();
         controller.setMainApp(this); // Controller'a Main referansını ver
 
-        //System.out.println(GetOyuncu().getOyuncuAdi());
-
         // İlk sahneyi göster
         primaryStage.setTitle("JavaFX Örneği");
         primaryStage.setScene(new Scene(root, 674,527 ));
@@ -56,7 +54,7 @@ public class Arayuz extends Application {
 
     public static int Savas(int adim,Oyuncu oyuncu,Oyuncu bilgisayar) throws IOException {
         WriteFile(adim,"\n----------" + adim + ".Adim----------\n" + oyuncu.KartlariniYazdir() + "\nOyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)\n");
-        oyuncu.kartSec(adim);
+        //oyuncu.kartSec(adim);
         bilgisayar.kartSec(0);
         for(int i = 0; i < 3; i++){
             SavasAraclari insankart = oyuncu.GetSecilenKartlar().get(i);

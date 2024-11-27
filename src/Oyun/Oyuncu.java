@@ -12,12 +12,12 @@ public class Oyuncu {
     private ArrayList<SavasAraclari> SecilenKartlar = new ArrayList<>();
     public  Oyuncu(){
         this.oyuncuAdi="Bilgisayar";
-        KartListesi();
+        //KartListesi();
     }
     public Oyuncu(String oyuncuAdi,String oyuncuID){
         this.oyuncuAdi=oyuncuAdi;
         this.oyuncuID=oyuncuID;
-        KartListesi();
+        //KartListesi();
     }
     public void setOyuncuAdi(String ad){
         this.oyuncuAdi = ad;
@@ -40,7 +40,7 @@ public class Oyuncu {
                 this.SetSeviye(kart.getSeviye());
         }
     }
-    void KartListesi(){
+    public void KartListesi(){
         KartSeviyeKontrol(); // Dagitma giren kartlara seviye yetiyorsa ekliyor
         KartVer(6); // Başlangıctaki iki tarafa da rastgele 6 kart verir
     }
@@ -131,6 +131,7 @@ public class Oyuncu {
                 }
             }
         }
+        /*
         else{
             System.out.println("----" + adim + ".Adim----");
             for(int i=0;i<3;i++){
@@ -168,7 +169,7 @@ public class Oyuncu {
                     }
                 }while(!kartBulundu);
             }
-        }
+        }*/
     }
     public void KartKontrol(){
         ArrayList<SavasAraclari> Silinecekler = new ArrayList<>();
@@ -194,6 +195,9 @@ public class Oyuncu {
     }
     public ArrayList<SavasAraclari> GetSecilenKartlar(){
         return SecilenKartlar;
+    }
+    public void SetSecilenKartlar(ArrayList<SavasAraclari> secilenkartlar){
+        SecilenKartlar=secilenkartlar;
     }
     public ArrayList<SavasAraclari> GetKartlarin(){
         return Kartlarin;
