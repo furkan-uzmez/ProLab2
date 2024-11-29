@@ -10,7 +10,7 @@ public abstract class SavasAraclari {
     private String sinif,altsinif;
     private int havaVurusAvantaj,karaVurusAvantaj,denizVurusAvantaj;
     private HashMap<String,Integer> avantajlar = new HashMap<>();
-    protected int kullanimsayisi=0;
+    private int kullanimsayisi=0;
     SavasAraclari(int seviyePuani,int dayaniklilik, int vurus,String sinif,String altsinif,int hava_avantaj,int kara_avantaj,int deniz_avantaj) {
         this.seviyePuani = seviyePuani;
         this.dayaniklilik = dayaniklilik;
@@ -30,6 +30,8 @@ public abstract class SavasAraclari {
     public int getDayaniklilik() {
         return dayaniklilik;
     }
+    public int getKullanimsayisi(){return kullanimsayisi;}
+    public void setKullanimsayisi(int kullanimsayisi){this.kullanimsayisi=kullanimsayisi;}
     void setDayaniklilik(int dayaniklilik){
         this.dayaniklilik = dayaniklilik;
     }

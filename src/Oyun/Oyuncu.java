@@ -2,7 +2,6 @@ package Oyun;
 
 import java.util.*;
 public class Oyuncu {
-    Scanner scanner=new Scanner(System.in);
     Random rand = new Random();
     String oyuncuID,oyuncuAdi;
     private int skor=0,sayi,seviye=0;
@@ -12,12 +11,10 @@ public class Oyuncu {
     private ArrayList<SavasAraclari> SecilenKartlar = new ArrayList<>();
     public  Oyuncu(){
         this.oyuncuAdi="Bilgisayar";
-        //KartListesi();
     }
     public Oyuncu(String oyuncuAdi,String oyuncuID){
         this.oyuncuAdi=oyuncuAdi;
         this.oyuncuID=oyuncuID;
-        //KartListesi();
     }
     public void setOyuncuAdi(String ad){
         this.oyuncuAdi = ad;
@@ -97,79 +94,40 @@ public class Oyuncu {
             i++;
         }while(i<sonindex);
     }
-    int SkorGoster(){
+    public int SkorGoster(){
         return skor;
     }
     public void kartSec(int adim){ // Bilgisayar kartlarindan rastgele 3 tane , oyuncu kartlarından kendi istediği 3 tanesini seçiyor
         SecilenKartlar.clear();
         int kullanilmiskart=0;
         for (SavasAraclari savasAraclari : Kartlarin) {
-            if (savasAraclari.kullanimsayisi == 1)
+            if (savasAraclari.getKullanimsayisi() == 1)
                 kullanilmiskart++;
         }
         if(Objects.equals(this.oyuncuAdi, "Bilgisayar")){
             for(int j=0;j<3;){
                 sayi = rand.nextInt(Kartlarin.size());
                 if(Kartlarin.size()-kullanilmiskart>=3) {
-                    if (!SecilenKartlar.contains(Kartlarin.get(sayi)) && Kartlarin.get(sayi).kullanimsayisi==0) {
+                    if (!SecilenKartlar.contains(Kartlarin.get(sayi)) && Kartlarin.get(sayi).getKullanimsayisi()==0) {
                         SecilenKartlar.add(Kartlarin.get(sayi));
-                        Kartlarin.get(sayi).kullanimsayisi=1;
+                        Kartlarin.get(sayi).setKullanimsayisi(1);
                         j++;
                     }
                 }
                 else{
-                    if(j<(Kartlarin.size()-kullanilmiskart) && !SecilenKartlar.contains(Kartlarin.get(sayi)) && Kartlarin.get(sayi).kullanimsayisi==0){
+                    if(j<(Kartlarin.size()-kullanilmiskart) && !SecilenKartlar.contains(Kartlarin.get(sayi)) && Kartlarin.get(sayi).getKullanimsayisi()==0){
                         SecilenKartlar.add(Kartlarin.get(sayi));
-                        Kartlarin.get(sayi).kullanimsayisi=1;
+                        Kartlarin.get(sayi).setKullanimsayisi(1);
                         j++;
                     }
                     else if(j>=(Kartlarin.size()-kullanilmiskart) && !SecilenKartlar.contains(Kartlarin.get(sayi))) {
                         SecilenKartlar.add(Kartlarin.get(sayi));
-                        Kartlarin.get(sayi).kullanimsayisi=1;
+                        Kartlarin.get(sayi).setKullanimsayisi(1);
                         j++;
                     }
                 }
             }
         }
-        /*
-        else{
-            System.out.println("----" + adim + ".Adim----");
-            for(int i=0;i<3;i++){
-                boolean kartBulundu;
-                do {
-                    System.out.print((i + 1) + ".karti seciniz :");
-                    String kart = scanner.nextLine();
-                    kartBulundu = false;
-                    for (int j = 0; j < Kartlarin.size(); j++) {
-                        if(Kartlarin.size()-kullanilmiskart>=3) {
-                            if (Objects.equals(kart, Kartlarin.get(j).getAltSinif()) && !SecilenKartlar.contains(Kartlarin.get(j)) && Kartlarin.get(j).kullanimsayisi==0) {
-                                SecilenKartlar.add(Kartlarin.get(j));
-                                Kartlarin.get(j).kullanimsayisi=1;
-                                kartBulundu = true;
-                                break;
-                            }
-                        }
-                        else{
-                            if (i<(Kartlarin.size()-kullanilmiskart) && Objects.equals(kart, Kartlarin.get(j).getAltSinif()) && !SecilenKartlar.contains(Kartlarin.get(j)) && Kartlarin.get(j).kullanimsayisi==0) {
-                                SecilenKartlar.add(Kartlarin.get(j));
-                                Kartlarin.get(j).kullanimsayisi=1;
-                                kartBulundu = true;
-                                break;
-                            }
-                            else if (i>=(Kartlarin.size()-kullanilmiskart) && Objects.equals(kart, Kartlarin.get(j).getAltSinif()) && !SecilenKartlar.contains(Kartlarin.get(j)) ) {
-                                SecilenKartlar.add(Kartlarin.get(j));
-                                Kartlarin.get(j).kullanimsayisi=1;
-                                kartBulundu = true;
-                                break;
-                            }
-                        }
-                    }
-                    if (!kartBulundu) {
-                        System.out.println("Sectiginiz kart listenizde bulunmamaktir");
-                    }
-                }while(!kartBulundu);
-            }
-        }*/
     }
     public void KartKontrol(){
         ArrayList<SavasAraclari> Silinecekler = new ArrayList<>();
@@ -214,7 +172,7 @@ public class Oyuncu {
         StringBuilder kartmetni = new StringBuilder();
         kartmetni.append("Kartlarin:\n");
         for(SavasAraclari x : Kartlarin){
-            kartmetni.append(x.getAltSinif() + " -- " + x.getDayaniklilik() + "-" + x.kullanimsayisi + "\n");
+            kartmetni.append(x.getAltSinif() + " -- " + x.getDayaniklilik() + "-" + x.getKullanimsayisi() + "\n");
         }
         return kartmetni.toString();
     }

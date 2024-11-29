@@ -16,48 +16,78 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="rootPane" prefHeight="527.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/17.0.3" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane fx:id="rootPane" prefHeight="822.1" prefWidth="1051.4" xmlns="http://javafx.com/javafx/17.0.3" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
 
    <!-- ImageView for background -->
-   <ImageView fx:id="imageView" fitHeight="527.0" fitWidth="674.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+   <ImageView fx:id="imageView" blendMode="MULTIPLY" cache="true" fitHeight="822.1" fitWidth="1051.4" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
       <image>
-         <Image url="@resimler/background.png" />
+         <Image url="@resimler/arkaplan2.png" />
+      </image>
+      <effect>
+         <InnerShadow choke="0.57" height="97.25" radius="50.4625" width="106.6" />
+      </effect>
+   </ImageView>
+   <ImageView fitHeight="96.7" fitWidth="312.0" layoutX="366.6" layoutY="425.9" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@resimler/girisss.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="96.7" fitWidth="312.0" layoutX="366.6" layoutY="531.9" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@resimler/girisss.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="96.7" fitWidth="312.0" layoutX="366.6" layoutY="636.5" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@resimler/girisss.png" />
       </image>
    </ImageView>
 
    <!-- Other UI elements -->
-   <TextField fx:id="nameField" layoutX="252.0" layoutY="386.0" opacity="0.65" prefHeight="35.0" prefWidth="169.0" promptText="Enter Username" style="-fx-background-color: white; -fx-border-color: black;">
+   <TextField fx:id="tur" layoutX="408.7" layoutY="446.9" opacity="0.7" prefHeight="54.6" prefWidth="226.2" promptText="Enter Number of Round" style="-fx-background-color: white; -fx-border-color: black;">
       <font>
-         <Font size="15.0" />
+         <Font size="23.4" />
       </font>
       <effect>
-         <InnerShadow choke="0.51" height="35.74" radius="21.7925" width="53.43" />
-      </effect></TextField>
-   <TextField fx:id="level" layoutX="252.0" layoutY="432.0" opacity="0.65" prefHeight="35.0" prefWidth="169.0" promptText="Enter Level" style="-fx-background-color: white; -fx-border-color: black;">
+         <InnerShadow choke="0.5" height="81.9" radius="40.3" width="82.8" />
+      </effect>
+   </TextField>
+   <TextField fx:id="nameField" layoutX="408.7" layoutY="552.2" opacity="0.7" prefHeight="54.6" prefWidth="226.2" promptText="Enter Username" style="-fx-background-color: white; -fx-border-color: black;">
       <font>
-         <Font size="15.0" />
+         <Font size="23.4" />
       </font>
       <effect>
-         <InnerShadow choke="0.5" height="18.0" radius="17.25" width="53.0" />
-      </effect></TextField>
-   <ImageView fitHeight="51.0" fitWidth="129.0" layoutX="273.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+         <InnerShadow choke="0.5" height="81.9" radius="40.3" width="82.8" />
+      </effect>
+   </TextField>
+   <TextField fx:id="level" layoutX="408.7" layoutY="656.7" opacity="0.7" prefHeight="54.6" prefWidth="226.2" promptText="Enter Level" style="-fx-background-color: white; -fx-border-color: black;">
+      <font>
+         <Font size="23.4" />
+      </font>
+      <effect>
+         <InnerShadow choke="0.5" height="81.9" radius="40.3" width="82.8" />
+      </effect>
+   </TextField>
+
+   <ImageView fitHeight="79.6" fitWidth="201.2" layoutX="424.3" layoutY="736.3" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@resimler/start4.png" />
       </image>
    </ImageView>
-   <Button layoutX="292.0" layoutY="478.0" mnemonicParsing="false" onAction="#handleNameSubmit" opacity="0.0" prefHeight="29.0" prefWidth="92.0" text="START" textAlignment="CENTER">
+   <Button layoutX="449.3" layoutY="745.7" mnemonicParsing="false" onAction="#handleNameSubmit" opacity="0.0" prefHeight="45.2" prefWidth="143.5" text="START" textAlignment="CENTER">
       <font>
-         <Font name="Arial Black" size="13.0" />
+         <Font name="Arial Black" size="20.4" />
       </font>
       <effect>
-         <InnerShadow choke="0.6" height="37.4" radius="20.7325" width="47.53" />
+         <InnerShadow choke="0.6" height="58.3" radius="32.4" width="74.2" />
       </effect>
       <cursor>
          <Cursor fx:constant="HAND" />
-      </cursor></Button>
-   <Text layoutX="102.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WARRIOR CARDS" wrappingWidth="465.0380973815918">
+      </cursor>
+   </Button>
+   <Text fx:id="warriorText" layoutX="165.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WARRIOR CARDS" wrappingWidth="725.5">
       <font>
-         <Font name="Arial Black" size="48.0" />
+         <Font name="Arial Black" size="74.9" />
       </font>
       <fill>
          <LinearGradient endX="1.0" endY="1.0">
@@ -76,14 +106,32 @@
          </LinearGradient>
       </fill>
       <effect>
-         <DropShadow height="26.53" radius="69.8825" spread="0.65" width="255.0">
+         <DropShadow height="169.19" radius="62.8" spread="0.75" width="84.01">
             <input>
                <SepiaTone />
             </input>
          </DropShadow>
       </effect>
    </Text>
-   <Text layoutX="575.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version: 2.3.0" wrappingWidth="91.7400016784668">
+   <Text layoutX="930.0" layoutY="795.2" strokeType="OUTSIDE" strokeWidth="0.0" text="Version: 2.3.0" wrappingWidth="93.37329660209934">
+      <fill>
+         <RadialGradient centerX="0.47783933518005545" centerY="0.23871733966745845" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.32894736528396606" green="0.08771929889917374" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Text>
+   <Text layoutX="21.8" layoutY="764.4" strokeType="OUTSIDE" strokeWidth="0.0" text="MADE BY" wrappingWidth="122.2">
       <fill>
          <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
             <stops>
@@ -101,25 +149,7 @@
          </RadialGradient>
       </fill>
    </Text>
-   <Text layoutX="14.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MADE BY" wrappingWidth="77.5">
-      <fill>
-         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-            <stops>
-               <Stop>
-                  <color>
-                     <Color red="0.32894736528396606" green="0.08771929889917374" />
-                  </color>
-               </Stop>
-               <Stop offset="1.0">
-                  <color>
-                     <Color red="1.0" green="1.0" blue="1.0" />
-                  </color>
-               </Stop>
-            </stops>
-         </RadialGradient>
-      </fill>
-   </Text>
-   <Text layoutX="14.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FurKer Games">
+   <Text layoutX="21.8" layoutY="795.2" strokeType="OUTSIDE" strokeWidth="0.0" text="FurKer Games">
       <fill>
          <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
             <stops>
