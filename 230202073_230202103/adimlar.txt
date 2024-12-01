@@ -1,0 +1,274 @@
+
+----------1.Adim----------
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Obus1 -- 20-0
+Obus2 -- 20-0
+Ucak1 -- 20-0
+Ucak2 -- 20-0
+Firkateyn1 -- 25-0
+Firkateyn2 -- 25-0
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+Obus3 -- 20-0
+Ucak3 -- 20-0
+Obus4 -- 20-0
+Obus5 -- 20-0
+Ucak4 -- 20-0
+Ucak5 -- 20-0
+
+
+Oyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)
+1.Eslesme:    Obus1(10)  <-->  Ucak3(20)
+2.Eslesme:    Obus2(10)  <-->  Obus3(10)
+3.Eslesme:    Ucak1(20)  <-->  Obus5(10)
+
+Oyuncu seviye: 20
+Bilgisayar seviye: 10
+
+Dagitimdaki Kartlarin:
+Ucak1
+Obus1
+Firkateyn1
+
+----------2.Adim----------
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Obus2 -- 10-1
+Ucak1 -- 10-1
+Ucak2 -- 20-0
+Firkateyn1 -- 25-0
+Firkateyn2 -- 25-0
+Obus6 -- 20-0
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+Obus3 -- 10-1
+Ucak3 -- 10-1
+Obus4 -- 20-0
+Ucak4 -- 20-0
+Ucak5 -- 20-0
+Obus7 -- 20-0
+
+
+Oyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)
+1.Eslesme:    Ucak2(10)  <-->  Ucak5(10)
+2.Eslesme:    Firkateyn1(15)  <-->  Ucak4(10)
+3.Eslesme:    Firkateyn2(10)  <-->  Obus7(15)
+
+Oyuncu seviye: 20
+Bilgisayar seviye: 10
+
+Dagitimdaki Kartlarin:
+Ucak1
+Obus1
+Firkateyn1
+Siha1
+Sida1
+KFS1
+
+----------3.Adim----------
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Obus2 -- 10-1
+Ucak1 -- 10-1
+Ucak2 -- 10-1
+Firkateyn1 -- 15-1
+Firkateyn2 -- 10-1
+Obus6 -- 20-0
+KFS1 -- 10-0
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+Obus3 -- 10-1
+Ucak3 -- 10-1
+Obus4 -- 20-0
+Ucak4 -- 5-1
+Ucak5 -- 10-1
+Obus7 -- 10-1
+Firkateyn3 -- 25-0
+
+
+Oyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)
+1.Eslesme:    KFS1(20)  <-->  Firkateyn3(10)
+2.Eslesme:    Obus6(10)  <-->  Obus4(10)
+3.Eslesme:    Firkateyn2(10)  <-->  Obus3(15)
+
+Oyuncu seviye: 30
+Bilgisayar seviye: 40
+
+Dagitimdaki Kartlarin:
+Ucak1
+Obus1
+Firkateyn1
+Siha1
+Sida1
+KFS1
+
+----------4.Adim----------
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Obus2 -- 10-1
+Ucak1 -- 10-1
+Ucak2 -- 10-1
+Firkateyn1 -- 15-1
+Obus6 -- 10-1
+Obus8 -- 20-0
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+Ucak3 -- 10-1
+Obus4 -- 10-1
+Ucak4 -- 5-1
+Ucak5 -- 10-1
+Obus7 -- 10-1
+Firkateyn3 -- 5-1
+Obus9 -- 20-0
+
+
+Oyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)
+1.Eslesme:    Obus8(10)  <-->  Obus9(10)
+2.Eslesme:    Obus6(10)  <-->  Obus7(10)
+3.Eslesme:    Firkateyn1(15)  <-->  Ucak4(10)
+
+Oyuncu seviye: 50
+Bilgisayar seviye: 50
+
+Dagitimdaki Kartlarin:
+Ucak1
+Obus1
+Firkateyn1
+Siha1
+Sida1
+KFS1
+
+----------5.Adim----------
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Obus2 -- 10-1
+Ucak1 -- 10-1
+Ucak2 -- 10-1
+Firkateyn1 -- 5-1
+Obus8 -- 10-1
+KFS2 -- 10-0
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+Ucak3 -- 10-1
+Obus4 -- 10-1
+Ucak5 -- 10-1
+Firkateyn3 -- 5-1
+Obus9 -- 10-1
+Firkateyn4 -- 25-0
+
+
+Oyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)
+1.Eslesme:    KFS2(20)  <-->  Firkateyn4(10)
+2.Eslesme:    Obus8(10)  <-->  Obus4(10)
+3.Eslesme:    Firkateyn1(10)  <-->  Obus9(15)
+
+Oyuncu seviye: 70
+Bilgisayar seviye: 90
+
+Dagitimdaki Kartlarin:
+Ucak1
+Obus1
+Firkateyn1
+Siha1
+Sida1
+KFS1
+
+----------6.Adim----------
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Obus2 -- 10-1
+Ucak1 -- 10-1
+Ucak2 -- 10-1
+Obus10 -- 20-0
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+Ucak3 -- 10-1
+Ucak5 -- 10-1
+Firkateyn3 -- 5-1
+Firkateyn4 -- 5-1
+KFS3 -- 10-0
+
+
+Oyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)
+1.Eslesme:    Obus10(10)  <-->  KFS3(10)
+2.Eslesme:    Ucak2(10)  <-->  Ucak5(10)
+3.Eslesme:    Ucak1(10)  <-->  Firkateyn3(15)
+
+Oyuncu seviye: 110
+Bilgisayar seviye: 110
+
+Dagitimdaki Kartlarin:
+Ucak1
+Obus1
+Firkateyn1
+Siha1
+Sida1
+KFS1
+
+----------7.Adim----------
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Obus2 -- 10-1
+Obus10 -- 10-1
+Ucak6 -- 20-0
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+Ucak3 -- 10-1
+Firkateyn4 -- 5-1
+Ucak7 -- 20-0
+
+
+Oyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)
+1.Eslesme:    Ucak6(10)  <-->  Ucak7(10)
+2.Eslesme:    Obus10(15)  <-->  Firkateyn4(10)
+3.Eslesme:    Obus2(10)  <-->  Ucak3(20)
+
+Oyuncu seviye: 130
+Bilgisayar seviye: 130
+
+Dagitimdaki Kartlarin:
+Ucak1
+Obus1
+Firkateyn1
+Siha1
+Sida1
+KFS1
+
+----------8.Adim----------
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Ucak6 -- 10-1
+Obus11 -- 20-0
+KFS4 -- 10-0
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+Ucak7 -- 10-1
+Ucak8 -- 20-0
+KFS5 -- 10-0
+
+
+Oyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)
+1.Eslesme:    KFS4(30)  <-->  Ucak8(20)
+2.Eslesme:    Obus11(10)  <-->  KFS5(10)
+3.Eslesme:    Ucak6(10)  <-->  Ucak7(10)
+
+Oyuncu seviye: 170
+Bilgisayar seviye: 160
+
+Dagitimdaki Kartlarin:
+Ucak1
+Obus1
+Firkateyn1
+Siha1
+Sida1
+KFS1
+
+
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Obus11 -- 10-1
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+
+
+Kazandınız , bilgisayar kaybetti
+----------9.Adim----------
+f'ın Kartları(Dayanıklılık -- Kullanım):
+Obus11 -- 10-1
+
+Bilgisayar'ın Kartları(Dayanıklılık -- Kullanım):
+
+
+Oyuncu(Vuracağı Hasar) -- Bilgisayar(Vuracağı Hasar)
